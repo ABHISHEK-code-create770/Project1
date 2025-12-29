@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIC NITDGP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: open-sans, sans-serif;
+            
+
+        }
+
+        body {
+            background-color: #1c1c1c;
+            overflow-x: hidden;
+        }
+
+        #sec {
+            width: 100vw;
+            background-color: black;
+            height: 91.2px;
+            display: flex;
+            border: 1px solid black;
+            border-radius: 10px;
+
+
+        }
+
+        .f img {
+            height: 80px;
+            margin-left: 20px;
+        }
+
+        .s {
+            list-style-type: none;
+            display: flex;
+            margin-left: 200px;
+            margin-right: 20px;
+            margin-top: 25px;
+            align-items: center;
+            width: 91.25px;
+            height: 45.6px;
+        }
+
+        .s li {
+            color: white;
+            padding: 0px 15px;
+
+        }
+
+        .s li:hover {
+            cursor: pointer;
+            color: orangered;
+        }
+
+        .nxt {
+            display: flex;
+            margin-top: 120px;
+            margin-left: 50px;
+            font-family: open-sans, sans-serif;
+        }
+
+        .c1 {
+            width: 680px;
+            height: 203.4px;
+            color: white;
+        }
+
+        pre {
+            font-size: 2.45rem;
+            height: 133px;
+
+
+            font-weight: 700;
+        }
+
+        .o {
+            color: orangered;
+
+        }
+
+        .p1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            height: 32.8px;
+        }
+
+        .typing {
+            font-size: 2.45rem;
+            font-weight: 700;
+
+
+        }
+
+        .c3 {
+            margin-top: 50px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            letter-spacing: 0.1vw;
+        }
+
+        .c4 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            letter-spacing: 0.1vw;
+            border: 1px solid white;
+            margin-top: 17.6px;
+            height: 35px;
+            width: 679 px;
+            padding-left: 120px;
+            padding-top: 10px;
+            border-radius: 15px;
+            background-color: rgb(70, 70, 70);
+        }
+
+        form {
+            position: relative;
+            align-items: center;
+            background-color: #111;
+            color: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+            max-width: 1000px;
+            margin: 2rem auto;
+            box-shadow: 0 4px 16px #00000080;
+
+        }
+
+        .c2 {
+            width: 570px;
+            height: 350px;
+
+
+        }
+
+        #h {
+            width: 100%;
+            height: 100%;
+            border: 4px solid white;
+            margin-left: 100px;
+            border-radius: 52px;
+        }
+
+        .b {
+            width: 300px;
+            height: 45.6px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 8px;
+            box-sizing: border-box;
+            padding: 0.75rem;
+            font-size: 1rem;
+            background-color: #ffffff27;
+            color: #fff;
+            font-family: open-sans, sans-serif;
+        }
+
+        .d {
+            width: 300px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 8px;
+            box-sizing: border-box;
+            padding: 0.75rem;
+            font-size: 1rem;
+            background-color: #ffffff27;
+            color: #fff;
+            font-family: open-sans, sans-serif;
+            height: 100px;
+
+
+        }
+
+        .footer {
+            width: 100%;
+            height: 313.11px;
+            background-color: #000;
+            border-top: 1 px solid #474a4d;
+            color: #fff;
+            padding: 20px 15px;
+            text-align: center;
+        }
+
+        .f2 {
+            display: flex;
+            opacity: 1;
+            transform: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 5px;
+            font-family:open-sans, sans-serif;
+            
+
+        }
+        .end{
+            height:16px;
+            width:100%;
+                margin-top: 180px;
+    font-size: .75em;
+
+        }
+        #y2 {
+            background-color: #1c1c1c;
+            color: #fff;
+            overflow-x: hidden;
+            text-align:center;
+            margin-top:2rem;
+            height:212.4px;
+            width:80%;
+            margin-left:auto;
+    
+    
+                border: 1px solid rgb(4, 19, 49);
+                padding: 20px;
+                margin: 10px;
+                margin-bottom: 10rem;
+                width: 95vw;
+                background-color: #00000082;
+                overflow: hidden;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                box-shadow: 3px 3px 5px #0000004d;
+                border-radius: 1rem;
+        }
+        #y3{
+                background: linear-gradient(135deg, #ffbe0b1a, #f42b031a);
+    border: 2px solid;
+    border-image: linear-gradient(135deg, #ffbe0bcc, #f42b03cc) 1;
+    border-radius: 12px;
+    padding: 16px 20px;
+    /* margin-bottom: 20px; */
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 0 4px 15px #ffbe0b33;
+    transition: all .3s 
+ease;
+    position: relative;
+    overflow: hidden;
+
+        }
+        .y4{
+            color: #ffbe0b;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 12px;
+            background: #ffbe0b33;
+            border-radius: 6px;
+            transition: all .3s 
+               ease;
+             border: 1px solid rgba(255, 190, 11, .5);
+  
+        }
+        #y1{
+            height:54px;
+            margin-top:0px;
+            margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans, sans-serif;
+        font-size: medium;
+    margin-bottom: 1rem;
+    font-weight: 500;
+
+        }
+        .but{
+                color: white;
+                background: linear-gradient(260deg, rgba(255, 190, 11, .84) -29.7%, rgba(244, 43, 3, .84) 128.34%);
+
+                border: none;
+                opacity: 1;
+                cursor: pointer;
+                border-radius: 5px;
+    align-self: flex-start;
+    margin-top: auto;
+    font-size: large;
+    font-weight: 500;
+        padding: 5px 10px;
+        margin-top:0px;
+        margin-bottom: 10px;
+
+        }
+        #s1{
+            width:100%;
+            height:86.6px;
+                display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+        }
+        .s2{
+                font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 3rem;
+        }
+        .u1{
+            
+    width: 12rem;
+    height: .3125rem;
+    background:linear-gradient(260deg, rgba(255, 190, 11, .84) -29.7%, rgba(244, 43, 3, .84) 128.34%);
+    color: transparent;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+
+        }
+        .s3{
+                display: flex;
+    /* flex-direction: row */
+    align-items: center; 
+    justify-content: center;
+    padding: 60px 20px;
+    padding-left: 20px;
+    /* flex-wrap: wrap; */
+    gap: 40px;
+    margin:0;
+        }
+        .s4{
+                align-items: flex-end;
+                width: 546px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+        border-radius: 10px;
+    box-shadow: 0 8px 16px #0003;
+        }
+        .s7{
+            width:596px;
+            height:268px;
+            margin-top:20px;
+                opacity: 1;
+    transform: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans, sans-serif;
+        color: #fff;
+        border: solid 2px white;
+        border-radius: 10px;
+
+
+        background-color: #ffffff1d;
+    color: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px #0003;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6;
+    transition: transform .3s 
+ease-in-out;
+    border: 1px solid #ffffff;
+        }
+    .s8{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans, sans-serif;
+    opacity: 1; transform: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    }
+    .u2{
+    width: 7rem;
+    height: .3125rem;
+    background:linear-gradient(260deg, rgba(255, 190, 11, .84) -29.7%, rgba(244, 43, 3, .84) 128.34%);
+    color: transparent;
+    border-radius: 5px;
+    margin-bottom: 2.5rem;
+
+    }
+
+
+
+        
+    </style>
+</head>
+
+<body>
+
+    </div>
+    <div class="main">
+
+        <div class="header">
+            <section id="sec">
+                <ul class="f">
+                    <img alt="Nit DGP Logo" src="https://www.iicnitdgp.in/assets/NITLogo2-Dw5fSRtB.png">
+                    <img alt="IIC Logo" src="https://www.iicnitdgp.in/assets/iiclogo-Dp9pygXw.png">
+                </ul>
+                <ul class="s">
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>GUIDLINES</li>
+                    <li>ACTIVITY</li>
+                    <li>HACKATHON</li>
+                    <li>COLLABORATION</li>
+                    <li>GALLERY</li>
+                    <li>AI2 SUMMIT</li>
+                </ul>
+
+            </section>
+        </div>
+        <div class="nxt">
+            <div class="c1">
+                <pre>INSTITUTION'S INNOVATION 
+COUNCIL</pre>
+                <p class="p1">Innovation & <span class="o">Incubation</span> Cell</p>
+                <h3 class="typing o">Change.</h3>
+                <div class="c3">Empowering <span class="o">visionaries </span>to cultivate excellence while guiding
+                    future generations towards sustainable growth and innovation.</div>
+                <div class="c4">Motto of IIC : : 3I :<span class="o">Innovation</span> IPR <span
+                        style="color:green">Incubation</span></div>
+            </div>
+
+            <div class="c2"><img id="h"
+                    src="https://sandiptostoragecheck.blob.core.windows.net/uploads/carousel-1755698693147-17.jpg">
+            </div>
+
+
+        </div>
+    </div><br><br><br><br><br><br>
+    <div id="y2">
+        <div id="y3">
+            Nominations For Distinguished Alumni Award 2025 <span class="y4">HERE</span>
+        </div><span id="y1">Do you have new ideas? We welcome innovative suggestions and creative thoughts that can help us build a brighter future together. Share your ideas, and let's make <br><center>an impact!</center></span> 
+        <center><button class="but" style="color: white; border: none; opacity: 1; cursor: pointer;">Apply Now</button></center>
+         <div class="y7"></div>
+    </div>
+    <br>
+    <br><br><br><br>
+    <div id="s1">
+        <p class="s2">ABOUT <span class="o">IIC</span></p>
+        <div class="u1"></div>
+    </div>
+    <div class="s3">
+        <div class="s4">
+            <img alt="Utkarsh Bhavan" src="https://www.iicnitdgp.in/assets/iicAbout-B1tFqEVW.jpg" style="opacity: 1; transform: none;" class="s4">
+
+        </div>
+        <div class="s5">
+            <div class="s8"><h1>Institution's <span class="o">Innovation</span>  Council</h1></div>
+            <div class="u2"></div>
+            <p class="s7">The Institution's Innovation Council (IIC) is dedicated to fostering a vibrant culture of innovation and incubation among faculty and students at NIT Durgapur. Our mission is to drive creativity and entrepreneurial spirit, resulting in the establishment of successful startups. These ventures, promoted and owned by our talented faculty and students, showcase the innovative potential and collaborative efforts within our community. By fostering collaboration and a proactive mindset, the IIC is dedicated to making NIT Durgapur a hub of innovation, where ideas are turned into reality, and the next generation of entrepreneurs is born.</p>
+        
+        </div>
+    </div>
+
+    <center>
+        <form action="post">
+            <p style="font-size:3rem;font-weight:800;color:white;font-family: Open Sans,sans-serif;text-decoration: underline;text-decoration-color: orangered;">CONTACT <span
+                    style="color:orangered;text-decoration: underline;text-decoration-color: orangered;">US</span></p>
+
+            <input type="text" id="t" placeholder="Your Name" class="b" required><br>
+
+            <input type="email" id="ee" placeholder="Email Address" class="b" required><br>
+            <input type="number" id="nm" placeholder="Mobile Number" class="b" required><br>
+            <textarea rows="5" cols="40" id="ta" placeholder="Your Message" class="d" required></textarea><br>
+            <button type="submit" id="2" class="b o" style="background-color:orangered;cursor:pointer;">Submit</button>
+
+        </form>
+    </center>
+    <br>
+    <br>
+    <footer class="footer">
+        <div class="f2">
+            <div>
+                <pre>
+                <h6 class="o" style="margin-bottom:0px;font-size:1.5rem;">Address</h6><p style="color: #fff;margin-bottom: 4px;line-height: 1.3;font-size: 0.9rem;">
+ Room no- 402, Utkarsh Bhavan
+National Institute of Technology
+Durgapur</p></pre>
+            </div>
+            <div>
+                <pre>
+                <h6 class="o" style="margin-bottom:0px;font-size:1.5rem;">President</h6><p style="color: #fff;margin-bottom: 4px;line-height: 1.3;font-size: 0.9rem;">
+Dr. Shibendu Shekhar Roy
+IIC NIT Durgapur
+Email : ssroy.me@nitdgp.ac.in
+
+</p></pre>
+            </div>
+            <div>
+                <pre>
+                <h6 class="o" style="margin-bottom:0px;font-size:1.5rem;">Contact Us</h6><p style="color: #fff;margin-bottom: 4px;line-height: 1.3;font-size: 0.9rem;">
+Email: iic@nitdgp.ac.in
+Phone: +91 9434788150</p></pre>
+            </div>
+            <div>
+                <pre>
+                <h6 class="o" style="margin-bottom:0px;font-size:1.5rem;">Quick Links</h6><p style="color: #fff;margin-bottom: 4px;line-height: 1.3;font-size: 0.9rem;">
+HOME
+TEAM
+CONTACT
+LOGIN</p></pre>
+            </div><br><br><br>
+
+        <div class="end"><center>© 2025 IIC NIT DURGAPUR. All rights reserved.</center></div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+    <script>
+        let q = document.querySelector(".typing");
+        setInterval(() => {
+            setTimeout(() => {
+                q.textContent = "";
+                for (let i = 0; i < 6; i++) {
+                    setTimeout(() => {
+                        q.textContent += "Drive."[i];
+                    }, i * 150);
+                }
+                q.textContent = "";
+                // q.textContent="Vision.";
+            }, 1500);
+
+            // setTimeout(()=>{            //     q.textContent="Drive.";
+            // },1500);
+
+            setTimeout(() => {
+                // q.textContent="";
+                // q.textContent="Evolution";
+                q.textContent = "";
+                for (let i = 0; i < 10; i++) {
+                    setTimeout(() => {
+                        q.textContent += "Evolution."[i];
+                    }, i * 150);
+                }
+                q.textContent = "";
+            }, 3000);
+
+            setTimeout(() => {
+                q.textContent = "";
+                for (let i = 0; i < 9; i++) {
+                    setTimeout(() => {
+                        q.textContent += "Progress."[i];
+                    }, i * 150);
+                }
+                q.textContent = "";
+
+                // q.textContent="Progress.";
+            }, 4500);
+            setTimeout(() => {
+                q.textContent = "";
+                for (let i = 0; i < 9; i++) {
+                    setTimeout(() => {
+                        q.textContent += "Ambition."[i];
+                    }, i * 150);
+                }
+                q.textContent = "";
+                // q.textContent="Ambition.";
+            }, 6000);
+            setTimeout(() => {
+                q.textContent = "";
+                for (let i = 0; i < 11; i++) {
+                    setTimeout(() => {
+                        q.textContent += "Creativity."[i];
+                    }, i * 120);
+                }
+                q.textContent = "";
+                // q.textContent="Creativity.";
+            }, 7500);
+            setTimeout(() => {
+                q.textContent = "";
+                for (let i = 0; i < 9; i++) {
+                    setTimeout(() => {
+                        q.textContent += "Teamwork."[i];
+                    }, i * 120);
+                }
+                q.textContent = "";
+                // q.textContent="Teamwork.";
+            }, 9000);
+            setTimeout(() => {
+                q.textContent = "";
+                for (let i = 0; i < 12; i++) {
+                    setTimeout(() => {
+                        q.textContent += "Empowerment."[i];
+                    }, i * 100);
+                }
+                q.textContent = "";
+                // q.textContent="Empowerment.";
+            }, 10500);
+            setTimeout(() => {
+                q.textContent = "";
+                for (let i = 0; i < 7; i++) {
+                    setTimeout(() => {
+                        q.textContent += "Vision."[i];
+                    }, i * 150);
+                }
+                q.textContent = "";
+                // q.textContent="Vision.";
+            }, 12000);
+            setTimeout(() => {
+                q.textContent = "";
+                for (let i = 0; i < 7; i++) {
+                    setTimeout(() => {
+                        q.textContent += "Growth."[i];
+                    }, i * 150);
+                }
+                q.textContent = "";
+                // q.textContent="Vision.";
+            }, 13500);
+        }, 15000);
+
+        let a = document.querySelector("#h");
+        setInterval(() => {
+            a.setAttribute("src", "https://sandiptostoragecheck.blob.core.windows.net/uploads/carousel-1755698693147-17.jpg");
+            setTimeout(() => {
+                a.setAttribute("src", "https://sandiptostoragecheck.blob.core.windows.net/uploads/carousel-1755698720391-23.jpg");
+            }, 2000);
+            setTimeout(() => {
+                a.setAttribute("src", "https://sandiptostoragecheck.blob.core.windows.net/uploads/carousel-1755699792440-42.jpg");
+            }, 4000);
+            setTimeout(() => {
+                a.setAttribute("src", "https://sandiptostoragecheck.blob.core.windows.net/uploads/carousel-1755698606516-20.jpg");
+            }, 6000);
+            setTimeout(() => {
+                a.setAttribute("src", "https://sandiptostoragecheck.blob.core.windows.net/uploads/carousel-1755698443638-19.jpg");
+            }, 8000);
+            setTimeout(() => {
+                a.setAttribute("src", "https://sandiptostoragecheck.blob.core.windows.net/uploads/carousel-1755833182307-theme.jpg");
+            }, 10000);
+
+        }, 12000);
+
+        document.getElementById("2").addEventListener("click", function (event) {
+            event.preventDefault();
+            let name = document.getElementById("t").value;
+            let email = document.getElementById("ee").value;
+            let number = document.getElementById("nm").value;
+            let message = document.getElementById("ta").value;
+            console.log("Name: " + name);
+            console.log("Email:" + email);
+            console.log("Number: " + number);
+            console.log("Message: " + message);
+            console.log("Data Fetched Successfully...");
+
+        })
+
+
+    </script>
+
+
+
+</body>
+
+</html>
